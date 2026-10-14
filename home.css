@@ -90,7 +90,7 @@ h3 {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 90vh;
+  min-height: 90vh;
   width: 100%;
 }
 
@@ -111,7 +111,7 @@ h3 {
 .experience {
   margin: 0 auto;
   border-radius: 10px;
-  height: 90vh;
+  min-height: 90vh;
   width: 80%;
   padding: 20px;
 }
@@ -125,7 +125,7 @@ h3 {
 
 .projects {
   width: 80%;
-  height: 90vh;
+  min-height: 90vh;
   margin: 0 auto;
   padding: 20px;
 }
