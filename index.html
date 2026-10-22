@@ -3,235 +3,207 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Kaustubh Bhosale is a software engineer specializing in Java, banking applications, and backend development."
+    />
+    <meta name="theme-color" content="#101b2d" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="index.css" />
     <title>Kaustubh Bhosale - Portfolio</title>
   </head>
   <body>
-    <div class="navbar">
-      <h2>Kaustubh Bhosale - Portfolio</h2>
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Main navigation">
+        <a class="brand" href="#home" aria-label="Kaustubh Bhosale, home">
+          <span class="brand-mark">KB</span>
+          <span>Kaustubh Bhosale</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a class="nav-contact" href="#contact">Let's talk <span aria-hidden="true">↗</span></a></li>
+        </ul>
+      </nav>
+    </header>
 
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-
-    <div class="container">
-      <div class="home" id="home">
-        <h1>Hi, I'm Kaustubh Bhosale</h1>
-        <h2>Software Engineer</h2>
-        <p>
+    <main class="container">
+      <section class="home" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> Software engineer · Backend &amp; fintech</p>
+          <h1 id="hero-title">Building reliable software for <span>real-world impact.</span></h1>
+          <p class="hero-intro">
           I am a passionate Software Engineer with a keen interest in creating
           innovative solutions in Java.
-        </p>
-        <h3>My Tech Stack:</h3>
-        <div class="skills">
-          <table>
-            <tr>
-              <td>
-                <img
-                  src="https://img.icons8.com/?size=100&id=13679&format=png&color=000000"
-                  alt="Java logo"
-                  title="Java logo"
-                />
-                <br />
-                Java
-              </td>
-              <td>
-                <img
-                  src="https://img.icons8.com/?size=100&id=90519&format=png&color=000000"
-                  alt="Spring logo"
-                  title="Spring logo"
-                />
-                <br />
-                Spring Framework
-              </td>
-              <td>
-                <img
-                  src="https://avatars.githubusercontent.com/u/4238769?v=4"
-                  alt="JSF logo"
-                  title="JSF logo"
-                />
-                <br />
-                JavaServer Faces (JSF)
-              </td>
-              <td>
-                <img
-                  src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"
-                  alt="Javascript logo"
-                  title="Javascript logo"
-                />
-                <br />
-                Javascript
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <img
-                  src="https://img.icons8.com/?size=100&id=33039&format=png&color=000000"
-                  alt="AWS logo"
-                  title="AWS logo"
-                />
-                <br />
-                Amazon Web Services (AWS)
-              </td>
-              <td>
-                <img
-                  src="https://img.icons8.com/?size=100&id=UFXRpPFebwa2&format=png&color=000000"
-                  alt="MySQL logo"
-                  title="MySQL logo"
-                />
-                <br />
-                MySQL
-              </td>
-              <td>
-                <img
-                  src="https://img.icons8.com/?size=100&id=38561&format=png&color=000000"
-                  alt="PostgreSQL logo"
-                  title="PostgreSQL logo"
-                />
-                <br />
-                PostgreSQL
-              </td>
-              <td>
-                <img
-                  src="https://www.ibm.com/content/dam/adobe-cms/instana/media_logo/IBM-DB2.png/_jcr_content/renditions/cq5dam.web.1280.1280.png"
-                  alt="IBM DB2 logo"
-                  title="IBM DB2 logo"
-                />
-                <br />
-                IBM DB2
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <img
-                  src="https://img.icons8.com/?size=100&id=22813&format=png&color=000000"
-                  alt="Docker logo"
-                  title="Docker logo"
-                />
-                <br />
-                Docker
-              </td>
-              <td>
-                <img
-                  src="https://img.icons8.com/?size=100&id=cvzmaEA4kC0o&format=png&color=000000"
-                  alt="Kubernetes logo"
-                  title="Kubernetes logo"
-                />
-                <br />
-                Kubernetes
-              </td>
-            </tr>
-          </table>
-        </div>
-      </div>
-      <h3 style="text-align: center">About:</h3>
-      <div class="about" id="about">
-        <img
-          src="resources/img/me.png"
-          alt="Me"
-        />
-        <p>
-          Award-winning Software Engineer with over 3 years of hands-on
-          experience in the Fintech sector, specializing in banking
-          applications, electronic fund transfer (EFT) systems, and backend
-          optimization. Recognized with the Best Performance Award (H2-2023) at
-          Euronet Worldwide for optimizing SOAP web services, refactoring DB2
-          stored procedures, and implementing critical MasterCard compliance
-          mandates. Highly proficient in Java, Spring Boot, REST/SOAP web
-          services, SQL, and JSF, with strong expertise in Microservices
-          architectures, Docker, Kubernetes, and AWS. Currently pursuing a
-          Bachelor in Computer Applications in Web Development and Cloud
-          Computing at Dr. D. Y. Patil University, I bring a strong blend of
-          legacy system modernization, modern distributed backend development,
-          agile collaboration, and continuous technical learning.
-        </p>
-      </div>
-      <h3 style="text-align: center">Experience</h3>
-      <div class="experience">
-        <b>Software Engineer - AS400</b>, Euronet Worldwide<i
-          >(Oct 25 - Jan 26)</i
-        >
-        <p>
-          • Customized RPGLE programs for the Electronics Fund Transfer ITM
-          team, demonstrating adaptability beyond core Java expertise. <br />
-          • Integrated credit card embossing API into EUI for automated credit
-          card production.<br />
-          • Contributed to global development projects in a product-based MNC
-          financial services environment.
-        </p>
-        <br />
-        <b>Software Engineer</b>, Euronet Worldwide<i>(Jan 24 - Dec 24)</i>
-        <p>
-          • Acquired comprehensive expertise in ITM EUI banking web application
-          and AS/400 backend systems. <br />• Resolved high volumes of Jira
-          stories and customer support tickets across multiple product versions.
-          <br />• Delivered enhancements for MasterCard Mandates, Client
-          Blacklist, SOAP web services, and CMS product features. <br />•
-          Utilized Core Java, J2EE, JSF, JavaScript, PrimeFaces, SQL, DB2, REST,
-          SOAP, and JAX-RPC technologies to implement solutions. <br />•
-          Mentored new developers, providing support for technical queries and
-          onboarding. <br />• Advanced team debugging and research
-          effectiveness, improving overall system reliability.
-        </p>
-        <br />
-        <b>Trainee Java Developer</b>, Euronet Worldwide<i>(Mar 22 - Jan 24)</i>
-        <p>
-          • Developed and maintained ITM EUI monolithic banking web application using JSF
-          framework and DB2 database in an agile Kanban environment. <br />
-          • Managed EUI screen bug fixes and improvements, addressing Jira stories and customer
-          tickets. <br />
-          • Resolved code conflicts and performed GitHub version control operations.
-          • Developed and tested REST web services in RPGLE; validated with Postman and iRPGUnit
-          framework. <br />
-          • Built expertise in Core Java, JSF, PrimeFaces, DB2, HTML, CSS, JavaScript, AJAX, SQL,
-          REST, and SOAP web services. <br />
-          • Earned early promotion to <b>Software Engineer</b> for delivering high-quality results on
-          schedule.
-        </p>
-        <br />
-        <b>System Officer</b>, CGM Pvt. Ltd.<i>(Sep 21 - Feb 22)</i>
-        <p>
-         • Generated business reports using ERP, MS Excel, and SQL, supporting daily operational
-          decision-making.
-        </p>
-      </div>
-      <h3 style="text-align: center">Projects:</h3>
-      <div class="projects" id="projects">
-        <table>
-          <tr>
-            <td>
-              <li><b><a href="https://github.com/kaustubh003/eazybank-microservices" target="_blank">EazyBank Microservices</a></b> - Banking microservices application made with Java and Spring Boot</li>
-              <p>Concepts used: Java, Spring Boot, Microservices architectures, Eureka, Gateway server, and more.</p>
-            </td>
-            <td>
-              <li><b><a href="https://github.com/kaustubh003/movies-app-client" target="_blank">Movies App</a></b> - Movie browsing application made with React.js and MongoDB</li>
-              <p>Concepts used: Java, Spring Boot, Javascript, React.js, axios, React player, CSS, REST APIs, Mongo Atlas.</p>
-            </td>
-          </tr>
-        </table>
-      </div>
-
-      <h3 style="text-align: center">Contact:</h3>
-      <div class="about contact-card" id="contact">
-        <div class="contact-content">
-          <p>
-            <b>
-            Available for software engineering opportunities across backend engineering,
-            banking systems, and cloud-native application development.
-            </b>
           </p>
-          <div class="contact-links">
-            <a href="mailto:kaustubhbhosale003@gmail.com" aria-label="Email">Email</a>
-            <a href="https://github.com/kaustubh003" target="_blank" rel="noreferrer" aria-label="GitHub">GitHub</a>
-            <a href="https://www.linkedin.com/in/kaustubhbhosale003" target="_blank" rel="noreferrer" aria-label="LinkedIn">LinkedIn</a>
-            <a href="resources/Kaustubh_Bhosale_Resume.pdf" target="_blank" aria-label="Resume">Resume</a>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↓</span></a>
+            <a class="button button-secondary" href="resources/Kaustubh_Bhosale_Resume.pdf" target="_blank" rel="noreferrer">View résumé <span aria-hidden="true">↗</span></a>
           </div>
         </div>
-      </div>
-    </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-orbit orbit-one"></div>
+          <div class="hero-orbit orbit-two"></div>
+          <div class="hero-monogram">KB<span>.</span></div>
+          <span class="hero-caption">JAVA · SYSTEMS · FINTECH</span>
+        </div>
+      </section>
+
+      <section class="content-section" aria-labelledby="skills-title">
+        <div class="section-heading">
+          <p class="eyebrow">What I work with</p>
+          <h2 id="skills-title">Tools of the trade<span>.</span></h2>
+        </div>
+        <ul class="skills">
+          <li>Java</li>
+          <li>Spring Framework</li>
+          <li>JavaServer Faces</li>
+          <li>JavaScript</li>
+          <li>AWS</li>
+          <li>MySQL</li>
+          <li>PostgreSQL</li>
+          <li>IBM DB2</li>
+          <li>Docker</li>
+          <li>Kubernetes</li>
+        </ul>
+      </section>
+
+      <section class="content-section" id="about" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="eyebrow">A little about me</p>
+          <h2 id="about-title">Engineering with <span>purpose.</span></h2>
+        </div>
+        <div class="about">
+          <div class="portrait-frame">
+            <img src="resources/img/me.png" alt="Portrait of Kaustubh Bhosale" />
+            <span class="portrait-note">Curious by nature. Engineer by craft.</span>
+          </div>
+          <div class="about-copy">
+            <p>
+              Award-winning Software Engineer with over 3 years of hands-on
+              experience in the Fintech sector, specializing in banking
+              applications, electronic fund transfer (EFT) systems, and backend
+              optimization. Recognized with the Best Performance Award (H2-2023) at
+              Euronet Worldwide for optimizing SOAP web services, refactoring DB2
+              stored procedures, and implementing critical MasterCard compliance
+              mandates.
+            </p>
+            <p>
+              Highly proficient in Java, Spring Boot, REST/SOAP web services, SQL,
+              and JSF, with strong expertise in Microservices architectures, Docker,
+              Kubernetes, and AWS. Currently pursuing a Bachelor in Computer
+              Applications in Web Development and Cloud Computing at Dr. D. Y. Patil
+              University, I bring a strong blend of legacy system modernization,
+              modern distributed backend development, agile collaboration, and
+              continuous technical learning.
+            </p>
+            <a class="text-link" href="resources/Kaustubh_Bhosale_Resume.pdf" target="_blank" rel="noreferrer">More about my experience <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" id="experience" aria-labelledby="experience-title">
+        <div class="section-heading">
+          <p class="eyebrow">Where I've been</p>
+          <h2 id="experience-title">Experience<span>.</span></h2>
+        </div>
+        <div class="experience">
+          <article class="job">
+            <div class="job-heading">
+              <div><h3>Software Engineer — AS400</h3><p class="company">Euronet Worldwide</p></div>
+              <p class="job-date">Oct 2025 – Jan 2026</p>
+            </div>
+            <ul>
+              <li>Customized RPGLE programs for the Electronic Fund Transfer ITM team, demonstrating adaptability beyond core Java expertise.</li>
+              <li>Integrated a credit card embossing API into EUI for automated credit card production.</li>
+              <li>Contributed to global development projects in a product-based financial services environment.</li>
+            </ul>
+          </article>
+          <article class="job">
+            <div class="job-heading">
+              <div><h3>Software Engineer</h3><p class="company">Euronet Worldwide</p></div>
+              <p class="job-date">Jan 2024 – Dec 2024</p>
+            </div>
+            <ul>
+              <li>Acquired comprehensive expertise in the ITM EUI banking web application and AS/400 backend systems.</li>
+              <li>Resolved Jira stories and customer support tickets across multiple product versions.</li>
+              <li>Delivered enhancements for MasterCard Mandates, Client Blacklist, SOAP web services, and CMS product features.</li>
+              <li>Used Core Java, J2EE, JSF, JavaScript, PrimeFaces, SQL, DB2, REST, SOAP, and JAX-RPC to implement solutions.</li>
+              <li>Mentored new developers and improved team debugging and research effectiveness.</li>
+            </ul>
+          </article>
+          <article class="job">
+            <div class="job-heading">
+              <div><h3>Trainee Java Developer</h3><p class="company">Euronet Worldwide</p></div>
+              <p class="job-date">Mar 2022 – Jan 2024</p>
+            </div>
+            <ul>
+              <li>Developed and maintained the ITM EUI monolithic banking web application using JSF and DB2 in an agile Kanban environment.</li>
+              <li>Managed EUI screen bug fixes and improvements, addressing Jira stories and customer tickets.</li>
+              <li>Resolved code conflicts and performed GitHub version control operations.</li>
+              <li>Developed and tested RPGLE REST web services, validating them with Postman and iRPGUnit.</li>
+              <li>Built expertise in Core Java, JSF, PrimeFaces, DB2, HTML, CSS, JavaScript, AJAX, SQL, REST, and SOAP.</li>
+              <li>Earned early promotion to Software Engineer for delivering high-quality results on schedule.</li>
+            </ul>
+          </article>
+          <article class="job">
+            <div class="job-heading">
+              <div><h3>System Officer</h3><p class="company">CGM Pvt. Ltd.</p></div>
+              <p class="job-date">Sep 2021 – Feb 2022</p>
+            </div>
+            <ul>
+              <li>Generated business reports using ERP, MS Excel, and SQL to support daily operational decision-making.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="eyebrow">Selected work</p>
+          <h2 id="projects-title">Projects<span>.</span></h2>
+        </div>
+        <div class="projects">
+          <article class="project-card">
+            <span class="project-number">01 / BACKEND</span>
+            <h3>EazyBank Microservices</h3>
+            <p>A banking microservices application built with Java and Spring Boot.</p>
+            <ul class="project-tags"><li>Java</li><li>Spring Boot</li><li>Microservices</li><li>Eureka</li><li>Gateway</li></ul>
+            <a class="text-link" href="https://github.com/kaustubh003/eazybank-microservices" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="project-card">
+            <span class="project-number">02 / FULL STACK</span>
+            <h3>Movies App</h3>
+            <p>A movie browsing application built with React.js and MongoDB.</p>
+            <ul class="project-tags"><li>React</li><li>JavaScript</li><li>REST APIs</li><li>MongoDB Atlas</li><li>CSS</li></ul>
+            <a class="text-link" href="https://github.com/kaustubh003/movies-app-client" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Have a project in mind?</p>
+          <h2 id="contact-title">Let's make it <span>happen.</span></h2>
+          <p>Available for software engineering opportunities across backend engineering, banking systems, and cloud-native application development.</p>
+        </div>
+        <div class="contact-links">
+          <a class="button button-light" href="mailto:kaustubhbhosale003@gmail.com">Email me <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/kaustubh003" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          <a href="https://www.linkedin.com/in/kaustubhbhosale003" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a href="resources/Kaustubh_Bhosale_Resume.pdf" target="_blank" rel="noreferrer">Résumé <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer container">
+      <p>© 2026 Kaustubh Bhosale</p>
+      <a href="#home">Back to top ↑</a>
+    </footer>
   </body>
 </html>
